@@ -8,6 +8,7 @@ module ActsAsShoppingCart
       integer :quantity       # Holds the quantity of the object
       integer :item_id        # Holds the object id
       string  :item_type      # Holds the type of the object, for polymorphism
+      string  :note           # Holds a descriptive note for the object
       integer :price_cents, default: 0, null: false  # Holds the price of the item
       string  :price_currency, default: "USD", null: false # Holds the currency for the price
     end
