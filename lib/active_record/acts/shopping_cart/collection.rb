@@ -41,7 +41,7 @@ module ActiveRecord
           return unless cart_item
 
           if cart_item.quantity <= quantity
-            cart_item.delete
+            cart_item.destroy
           else
             cart_item.quantity = (cart_item.quantity - quantity)
             cart_item.save
